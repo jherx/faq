@@ -28,7 +28,7 @@ body {
   background: linear-gradient(to top, #af67e9, #6565e7) no-repeat fixed;
   min-height: 100%;
 }
-.container {
+.container{
   background-color: var(--Wite);
   min-width: 280px;
   border-radius: 20px;
