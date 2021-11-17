@@ -1,87 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32"  href="./images/favicon-32x32.png"/>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <title> FAQ Accordion Card</title>
   </head>
   <body>
-    <div class="img-content">
-      <img src="./images/illustration-woman-online-mobile.svg" class="imge__img" alt="">
-      <img src="./images/bg-pattern-mobile.svg" alt="">
-    </div>
-    <div class="content-input">
-      <h1 class="title-h1">FAQ</h1>
-      <div class="input-group">
-        <select name="" id="" class="form-select">
-          <option selected><b>How many team members can I invite?</b></option>
-          <option value="1">
-            <p>
-              You can invite up to 2 additional users on the Free plan. There is
-              no limit on team members for the Premium plan.
-            </p>
-          </option>
-        </select>
+    <main>
+      <div id='container' class="container">
+          <div class="left-bar">
+              <div class="main-image">
+                  <img class='desk-img' src="./images/illustration-woman-online-mobile.svg" alt=''>
+                  <img class='box-img'src="./images/illustration-box-desktop.svg" alt=''>
+              </div>
+          </div>
+          <div class="right-bar">
+              <h1 class="title">FAQ</h1>
+              <div class="questions">
+                  <div class='question' id='question1'>
+                     <h3 id='header1'>How many team members can i invite?</h3>
+                     <img id='img1' src="./images/icon-arrow-down.svg" alt=''> 
+                      <p id='answer1'>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+                  </div>
+                  <div class='question' id='question2'>
+                      <h3 id='header2'>What is the maximum file upload size?</h3>
+                      <img id='img2' src="./images/icon-arrow-down.svg" alt=''> 
+                      <p id='answer2'>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                  </div>
+                  <div class='question' id='question3'>
+                     <h3 id='header3'> How do i reset my password?</h3>
+                     <img id='img3'src="./images/icon-arrow-down.svg" alt=''> 
+                     <p id='answer3'>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+                  </div>
+                  <div class='question' id='question4'>
+                     <h3 id='header4'> Can i cancel my subscription?</h3>
+                     <img id='img4'src="./images/icon-arrow-down.svg" alt=''> 
+                     <p id='answer4'>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                  </div>
+                  <div class='question' id='question5'>
+                     <h3 id='header5'> Do you provide additional support?</h3>
+                     <img id='img5'src="./images/icon-arrow-down.svg" alt=''> 
+                     <p id='answer5'>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="input-group">
-        <select name="" id="" class="form-select">
-          <option><b>What is the maximum file upload size?</b></option>
-          <option value="1">
-            <p>
-              No more than 2GB. All files in your account must fit your allotted
-              storage space.
-            </p>
-          </option>
-        </select>
-      </div>
-      <div class="input-group">
-        <select name="" id="" class="form-select">
-          <option><b>How do I reset my password?</b></option>
-          <option value="1">
-            <p>
-              Click “Forgot password” from the login page or “Change password”
-              from your. Click “Forgot password” from the login page or “Change
-              password” from your profile page. A reset link will be emailed to
-              you.
-            </p>
-          </option>
-        </select>
-      </div>
-      <div class="input-group">
-        <select name="" id="" class="form-select">
-          <option>Can I cancel my subscription?</option>
-          <option value="1">
-            <p>
-              Yes! Send us a message and we’ll process your request no questions
-              asked.
-            </p>
-          </option>
-        </select>
-      </div>
-      <div class="input-group">
-        <select name="" id="" class="form-select">
-          <option value=""><b>Do you provide additional support? </b></option>
-          <option value="1">
-            <p>
-              Chat and email support is available 24/7. Phone lines are open
-              during normal business hours.
-            </p>
-          </option>
-        </select>
-      </div>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        > Coded by <a href="#">Gerson</a>.
-      </div>
-    </div>
+  </main>
   </body>
 </html>
