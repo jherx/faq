@@ -168,9 +168,9 @@ body {
     display: flex;
     background: none;
     width: auto;
-    height: 105px;
+    height: 107px;
     top: 0;
-    left: -12px;
+    left: 0;
     background-position: center;
     justify-content: center;
     align-items: center;
@@ -178,7 +178,7 @@ body {
   }
   .desk-img {
     position: fixed;
-    top: -120px;
+    top: -121px;
     display: grid;
   }
 
