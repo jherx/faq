@@ -29,45 +29,49 @@ body {
   background: linear-gradient(to top, #af67e9, #6565e7) no-repeat fixed;
   min-height: 100%;
 }
-.container{
+.container {
   min-width: 270px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   border-radius: 20px;
-  background: var(--Wite);
+  background: none;
   min-width: 270px;
   max-width: 425px;
-  margin: 10px 5px;
+  margin: 11px 5px;
   justify-content: center;
   justify-items: center;
+  padding-top: 140px;
+
 }
 
-
-  .left-bar{
-
-  }
-.main-image{
-
-
-  
+.left-bar {
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
 }
-.image-img{
- 
+.main-image {
+  width: 219px;
+  position: static;
 }
-.box-img{
+.image-img {
+ width: 100%;
+}
+.box-img {
   display: none;
   left: 0;
 }
-.right-bar{
- top: 1;
+.right-bar {
+  top: 1;
+  border-radius: 20px;
+  background: var(--Wite);
 }
- .right-bar h1 {
+.right-bar h1 {
   text-align: center;
   padding: 30px 30px 5px 30px;
 }
- .title {
+.title {
   margin-top: 70px;
-} 
+}
 
 .questions {
   margin-bottom: 40px;
@@ -96,29 +100,24 @@ body {
 /* 
 Medias-Querys
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
+}
 
- }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
 
- /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
- }
-
- /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .container{
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
     grid-template-columns: repeat(2, 1fr);
   }
- }
+}
 
- /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
 
- }
-
- /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { 
-
- }
-
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
