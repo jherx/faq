@@ -30,28 +30,29 @@ body {
   min-height: 100%;
 }
 .container {
-  min-width: 270px;
+  /* width: 90%; */
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   border-radius: 20px;
   background: none;
-  min-width: 270px;
-  max-width: 425px;
-  margin: 11px 5px;
+  /* max-width: 425px; */
+  margin: 5px 5px;
   justify-content: center;
-  justify-items: center;
-  padding-top: 140px;
-
+  /* justify-items: center; */
+  /* padding-top: 140px; */
 }
 
 .left-bar {
-  padding-top: 50px;
-  position: absolute;
-  top: 0;
+  display: flex;
+  justify-items: center;
+  padding-top: 49px;
+  /* position: fixed; */
+  bottom: 50;
+  justify-content: center;
 }
 .main-image {
   width: 219px;
-  position: static;
+  /* position: static; */
 }
 .image-img {
  width: 100%;
@@ -64,6 +65,8 @@ body {
   top: 1;
   border-radius: 20px;
   background: var(--Wite);
+  margin-bottom: 10px;
+  
 }
 .right-bar h1 {
   text-align: center;
@@ -72,7 +75,9 @@ body {
 .title {
   margin-top: 70px;
 }
-
+.desk-img{
+display: none;
+}
 .questions {
   margin-bottom: 40px;
   cursor: pointer;
@@ -97,25 +102,124 @@ body {
   font-weight: bolder;
 }
 
-/* 
-Medias-Querys
+/* Medias-Querys*/
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .container {
+    background-color: var(--Wite);
+    position: absolute;
+    width: 900px;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: none;
+    justify-items: none;
+    padding-top: 0;
   }
+  /* .left-bar {
+        position: static;
+  } */
+  .image-img {
+    display: none;
+  }
+
+
+.right-bar h1 {
+  text-align: left;
+}
+.left-bar {
+  background: url("../images/bg-pattern-desktop.svg") no-repeat;
+  background-position: -575px -280px;
+}
+.main-image {
+  position: relative;
+  top: 50px;
+  background: url("../images/illustration-woman-online-desktop.svg") no-repeat;
+  width:  500px;
+  height: 400px;
+  background-position: -90px;
+}
+.box-img {
+  display: inline;
+  position: absolute;
+  top: 175px;
+  left: -95px;
+}
+
+/* .desk-img {
+  display: inline;
+} */
+
+
+@keyframes smooth-appearing {
+  0% {
+    margin-top: -15px;
+  }
+}
+
+.questions div img.active {
+  animation: arrow-rotate 0.5s forwards;
+}
+@keyframes arrow-rotate {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.questions div h3.active {
+  font-weight: bold;
+}
+@keyframes answer-back {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: -5px;
+  }
+}
+.questions div img.back {
+  animation: arrow-back 0.5s forwards;
+}
+@keyframes arrow-back {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.box-img {
+  animation: animate-box 5s infinite;
+}
+@keyframes animate-box {
+  50% {
+    top: 100px;
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
