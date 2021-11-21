@@ -2,54 +2,138 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32"  href="./images/favicon-32x32.png"/>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./script.js"></script>
-    <title> FAQ Accordion Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>FAQ Accordion Card</title>
   </head>
   <body>
-    <main>
-      <div id='container' class="container">
-          <div class="left-bar">         
-              <div class="main-image">
-                  <img class='image-img' src="./images/illustration-woman-online-mobile.svg" alt='illustration-woma'>
-                  <!-- <img class='desk-img' src="./images/illustration-woman-online-desktop.svg" alt='illustration-woma'> -->
-                  <img class='box-img'src="./images/illustration-box-desktop.svg" alt='box'>
-              </div>
+    <div class="drop-down-body">
+        <div class="img-container">
+          <img
+            src="images/illustration-woman-online-desktop.svg"
+            alt="woman using app"
+            srcset=""
+            class="desktop-img"
+          />
+          <img
+            src="images/bg-pattern-desktop.svg"
+            alt="shadow"
+            srcset=""
+            class="desktop-shadow"
+          />
+          <img
+            src="images/illustration-box-desktop.svg"
+            alt="package"
+            srcset=""
+            class="desktop-box"
+          />
+  
+          <img
+            src="images/illustration-woman-online-mobile.svg"
+            alt="woman using app"
+            srcset=""
+            class="img"
+          />
+          <img
+            src="images/bg-pattern-mobile.svg"
+            alt="woaman using app"
+            srcset=""
+            class="shadow"
+          />
+        </div>
+        <div class="content-container">
+          <h1 class="faq">FAQ</h1>
+  
+          <div class="questions-container1">
+            <div class="question-container1">
+              <span class="question1">How many team members can I invite?</span>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow icon"
+                class="arrow1"
+              />
+            </div>
+  
+            <div class="answer1">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </div>
+  
+            <hr class="hr" />
+  
+            <div class="question-container1">
+              <span class="question1">What is the maximum file upload size?</span>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow icon"
+                class="arrow1"
+              />
+            </div>
+  
+            <div class="answer1">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </div>
+  
+            <hr class="hr" />
+  
+            <div class="question-container1">
+              <span class="question1">How do I reset my password?</span>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow icon"
+                class="arrow1"
+              />
+            </div>
+  
+            <div class="answer1">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </div>
+  
+            <hr class="hr" />
+  
+            <div class="question-container1">
+              <span class="question1">Can I cancel my subscription?</span>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow icon"
+                class="arrow1"
+              />
+            </div>
+  
+            <div class="answer1">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </div>
+  
+            <hr class="hr" />
+  
+            <div class="question-container1">
+              <span class="question1">Do you provide additional support?</span>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow icon"
+                class="arrow1"
+              />
+            </div>
+  
+            <div class="answer1">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </div>
+  
+            <hr class="hr" />
           </div>
-          <div class="right-bar">
-              <h1 class="title">FAQ</h1>
-              <div class="questions">
-                  <div class='question' id='question1'>
-                     <h3 id='header1'>How many team members can i invite?</h3>
-                     <img id='img1' src="./images/icon-arrow-down.svg" alt=''> 
-                      <p id='answer1'>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
-                  </div>
-                  <div class='question' id='question2'>
-                      <h3 id='header2'>What is the maximum file upload size?</h3>
-                      <img id='img2' src="./images/icon-arrow-down.svg" alt=''> 
-                      <p id='answer2'>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-                  </div>
-                  <div class='question' id='question3'>
-                     <h3 id='header3'> How do i reset my password?</h3>
-                     <img id='img3'src="./images/icon-arrow-down.svg" alt=''> 
-                     <p id='answer3'>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
-                  </div>
-                  <div class='question' id='question4'>
-                     <h3 id='header4'> Can i cancel my subscription?</h3>
-                     <img id='img4'src="./images/icon-arrow-down.svg" alt=''> 
-                     <p id='answer4'>Yes! Send us a message and we’ll process your request no questions asked.</p>
-                  </div>
-                  <div class='question' id='question5'>
-                     <h3 id='header5'> Do you provide additional support?</h3>
-                     <img id='img5'src="./images/icon-arrow-down.svg" alt=''> 
-                     <p id='answer5'>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
-  </main>
+    <script src="./script.js"></script>
   </body>
 </html>
